@@ -92,7 +92,6 @@ h2 {
 }
 
 .flex-section {
-    background-color: aquamarine;
     height: fit-content;
     display: inline-flex;
     flex-wrap: wrap-reverse;
@@ -147,11 +146,12 @@ li {
 
 .s-card img {
     width: 16.5em;
+    margin-bottom: 1.5rem;
 }
 
 .small-card {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     gap: 0.9em;
     margin-bottom: var(--mrg-b);
 }
@@ -168,7 +168,7 @@ li {
     margin-bottom: 2.5em;
 }
 
-.small-card::-webkit-scrollbar-thumb {
+/* .small-card::-webkit-scrollbar-thumb {
     background-color: #1e1e1e;
 }
 
@@ -183,14 +183,35 @@ li {
 .small-card::-webkit-scrollbar {
     cursor: grab;
     width: 2em;
-}
+} */
 
 .big-cards{
     display: flex;
     overflow-x: scroll;
     gap: 10px;
     margin-bottom: var(--mrg-b);
-    /* height: calc(4vw + 38em); */
+}
+
+.scroll-bar::-webkit-scrollbar {
+    height: 4.5px;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+    background-color: #f3f3f3;;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.scroll-bar::-webkit-scrollbar:hover {
+    cursor: grab;
+    height: 5px;
+}
+
+.scroll-bar::-webkit-scrollbar-button {
+    display: none;
 }
 
 .t-b-card {
@@ -199,6 +220,7 @@ li {
 
 .b-card {
     width: var(--big-card-width);
+    margin-bottom: 1.5rem;
 }
 
 .b-b-card {
@@ -233,4 +255,37 @@ li {
 
 .bottom-b-card7 {
     background-color: #e9c9c6;
+}
+
+.section6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: var(--mrg-b);
+}
+
+.section6-card img {
+    width: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: -.5rem;
+}
+
+.section6-card {
+    flex: 1 1 44vh;
+    height: 17rem;
+    background-color: #f5f5f5;
+    padding: 3vw;
+    text-align: center;
+}
+
+ .sct-6-card-5{
+     flex: 1 1 100%;
+     height: auto;
+ }
+
+.sct6-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 62vh;
+    gap: 2px;
 }
