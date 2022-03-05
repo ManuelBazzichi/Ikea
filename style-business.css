@@ -2,11 +2,11 @@
     --ikea-font: system-ui, sans-serif;
     font-family: var(--ikea-font);
     --font-siz-s: clamp(0.85em, 1vw, 2em);
-    --font-siz-m: clamp(0.8em, 1.2vw, 1.5em);
-    --font-siz-xl: clamp(1.5em, 2vw, 3.5em);
+    --font-siz-m: clamp(0.95em, 1.2vw, 1.5em);
+    --font-siz-xl: clamp(1.3em, 2vw, 2.5em);
     --font-siz-xxl: clamp(1.4em, 3vw, 4.5em);
     --mrg-b: 4.5vw;
-    --big-card-width: calc(12.8vw + 14em);
+    --big-card-width: calc(13.5vw + 13em);
 }
 
 * {
@@ -25,6 +25,10 @@ main div {
 
 a {
     color: black;
+}
+
+p {
+    font-size: var(--font-siz-m);
 }
 
 h1 {
@@ -47,12 +51,12 @@ h2 {
 }
 
 .button-long {
-    height: 2.5rem;
-    padding: 0 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 2em;
     background-color: white;
     border-style: none;
     margin-block: 2em;
+    /* font-size: var(--font-siz-m) */
 }
 
 .button-long:hover {
@@ -66,8 +70,7 @@ h2 {
 }
 
 .button-long-black {
-    height: 2.5rem;
-    padding: 0 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 2em;
     border-style: none;
     text-decoration: none;
@@ -94,8 +97,11 @@ h2 {
 .flex-section {
     height: fit-content;
     display: inline-flex;
-    flex-wrap: wrap-reverse;
     margin-bottom: var(--mrg-b);
+} 
+
+.sectn2{
+    flex-wrap: wrap-reverse;
 }
 
 .item-text {
@@ -109,7 +115,7 @@ h2 {
     flex: 1 1 28%;
 }
 
-.item-img-2 {
+.img-box-big {
     max-width: 100%;
     flex-grow: 1;
     cursor: pointer;
@@ -141,11 +147,13 @@ li {
 
 .section3-btn-2 {
     margin: 1rem 0 2rem 0;
-    border: 2px solid black;
+    border: 1px solid #bdbdbd;
 }
 
 .s-card img {
-    width: 16.5em;
+    height: -webkit-fill-available;
+    width: 16.3rem;
+    min-width: 8em;
     margin-bottom: 1.5rem;
 }
 
@@ -154,6 +162,7 @@ li {
     overflow-x: scroll;
     gap: 0.9em;
     margin-bottom: var(--mrg-b);
+    cursor: pointer;
 }
 
 .s-card {
@@ -166,29 +175,13 @@ li {
 .small-card button {
     position: absolute;
     margin-bottom: 4.5rem;
+    cursor: pointer;
 }
-
-/* .small-card::-webkit-scrollbar-thumb {
-    background-color: #1e1e1e;
-}
-
-.small-card::-webkit-scrollbar-track {
-    background-color: rgb(220 220 220);
-}
-
-.small-card::-webkit-scrollbar-corner {
-    border-radius: 20px;
-}
-
-.small-card::-webkit-scrollbar {
-    cursor: grab;
-    width: 2em;
-} */
 
 .big-cards {
     display: flex;
     overflow-x: scroll;
-    gap: 10px;
+    gap: calc(5px + 1vw);
     margin-bottom: var(--mrg-b);
 }
 
@@ -198,7 +191,6 @@ li {
 
 .scroll-bar::-webkit-scrollbar-track {
     background-color: #f3f3f3;
-    ;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
@@ -229,16 +221,21 @@ li {
     flex-direction: column;
     margin-top: -4px;
     justify-content: space-between;
-    padding-inline: 2rem;
+    /* padding-inline: 2rem; */
     height: calc(13vw + 12em);
+    padding-inline: 3.5vw;
 }
 
 .arrow {
-    width: 3rem;
-    border: 2px solid;
-    background-color: #fff;
+    width: calc(3vw + 1.5rem);
     border-radius: 50%;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.b-b-card strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .bottom-b-card1,
@@ -277,16 +274,19 @@ li {
 
 
 .section6-card {
+    display: flex;
     flex: 1 1 44vh;
-    height: 16rem;
+    height: calc(6vw + 10rem);
     background-color: #f5f5f5;
     padding: 3vw;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .sct-6-card-5 {
     flex: 1 1 100%;
-    height: auto;
 }
 
 .sct6-container {
@@ -298,20 +298,36 @@ li {
 
 .top-section7 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    align-content: flex-end;
+    height: fit-content;
+    gap: 4vw;
+    margin-bottom: 3vw;
 }
 
 .sct-button-brd {
-    border: 2px solid;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .5rem;
 }
 
 .top7-sct2 {
     display: flex;
-    flex: 0.9;
+    flex: 0.9 0 40.5vw;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 .top7-sct1 {
-    flex: 0.1 1 50%;
+    flex: 1 0.5 42vw;
+}
+
+.section-8 {
+    flex-wrap: wrap;
+}
+
+.sct8-text {
+    background-color: #002952;
+    padding: 3vw;
 }
