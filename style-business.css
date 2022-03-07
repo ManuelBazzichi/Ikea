@@ -548,7 +548,6 @@ li {
     display: flex;
     flex-wrap: wrap-reverse;
     margin-bottom: var(--mrg-b);
-    gap: 6px;
     gap: 1.25rem;
 }
 
@@ -558,6 +557,9 @@ li {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
 }
+ .fg-img {
+    cursor: pointer;
+ }
 
 .grid-section7 img {
     width: inherit;
