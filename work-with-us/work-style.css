@@ -19,6 +19,7 @@ body {
   font-family: var(--font-ikea);
 }
 
+
 .info {
   width: 100%;
   display: flex;
@@ -49,7 +50,7 @@ body {
 
 header,
 main,
-footer {
+.footer-container {
   margin-inline-start: 10%;
   margin-inline-end: 5%;
 }
@@ -289,7 +290,6 @@ nav .search {
   margin-top: 1em;
   margin-bottom: 1rem;
   color: black;
-  /* font-size: var(--font-siz-s); */
 }
 
 .text-content-h2-2 {
@@ -374,6 +374,128 @@ nav .search {
 .cta-box-2 .medium {
   width: 25%;
   margin-top: 16px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  margin-top: 5em;
+  padding-top: 3em;
+}
+
+footer{
+  background-color: rgb(240, 238, 238);
+}
+
+.ft-part-2, .ft-part-3, .ft-part-4, .ft-part-5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.ft-part-1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-font {
+  font-size: 0.875rem;
+}
+.content-ft{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-ft> a {
+  text-decoration: underline;
+  color: black;
+  font-size: 0.875rem
+}
+
+.content-ft, a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.875rem;
+}
+
+.content-ft, h4, p, a {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em ;
+}
+
+.footer-ul li {
+  list-style: none;
+  color:#dad4d4;
+  padding-top: 0.5em;
+}
+.small {
+  height: 18px;
+  padding: 20px 12px 20px 12px;
+  border-radius:64px ;
+  width:50% ;
+  line-height: 1px;
+  background-color: black;
+  color: white;
+  margin-top: 1em;
+}
+
+.ft-logos img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+.lower-ft-container {
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 10%;
+  margin-inline-end: 5%;
+  margin-top: 2em;
+}
+
+.small-transparent >img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.small-transparent {
+  display: flex;
+  align-items: center;
+  border-radius: 64px;
+  padding: 10px 20px;
+  border: lightgrey 1px solid;
+}
+
+.small-transparent:hover {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.ft-ending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline-start: 10%;
+  margin-inline-end: 5%;
+  margin-top: 2em;
+  border-top: 1px solid grey;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ultimate-ul{
+  display: flex;
+}
+
+.ultimate-ul li {
+  list-style: none;
+  color:#dad4d4;
+  padding-left: 16px;
 }
 
 /* MEDIA QUERY */
