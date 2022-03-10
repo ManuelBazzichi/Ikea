@@ -53,7 +53,7 @@ main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 nav {
@@ -634,13 +634,14 @@ footer a:hover {
     font-size: 0.875rem
 }
 
-.content-ft, a {
+.content-ft, .content-ft a {
     text-decoration: none;
     color: black;
     font-size: 0.875rem;
+    padding: 0;
 }
 
-.content-ft, h4, p, a {
+.content-ft, .content-ft h4, .content-ft p, .content-ft a {
     padding-bottom: 0.5em;
     font-size: var(--font-siz-s);
 }
@@ -750,6 +751,10 @@ ul.footer-ul {
 
     .ft-part-1 {
         margin-inline: 4vw;
+    }
+
+    nav {
+        margin-inline: 1vw;
     }
 }
 
