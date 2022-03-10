@@ -382,6 +382,12 @@ nav .search {
   display: flex;
   margin-top: 5em;
   padding-top: 3em;
+  flex-wrap: wrap;
+}
+footer p, footer a{color:#8f8f8f}
+footer a:hover{
+  text-decoration: underline;
+  color:#111;
 }
 
 footer{
@@ -411,13 +417,15 @@ footer{
 
 .content-ft> a {
   text-decoration: underline;
-  color: black;
   font-size: 0.875rem
+}
+
+.content-ft>a:hover {
+  color:#111;
 }
 
 .content-ft, a {
   text-decoration: none;
-  color: black;
   font-size: 0.875rem;
 }
 
@@ -426,16 +434,21 @@ footer{
   padding-bottom: 0.5em ;
 }
 
-.footer-ul li {
+.footer-ul> li {
   list-style: none;
   color:#dad4d4;
-  padding-top: 0.5em;
+  padding-top: 2em;
 }
+
+.footer-ul>li:first-child{
+  padding:0;
+}
+
 .small {
   height: 18px;
   padding: 20px 12px 20px 12px;
   border-radius:64px ;
-  width:50% ;
+  min-width:50% ;
   line-height: 1px;
   background-color: black;
   color: white;
@@ -452,6 +465,7 @@ footer{
 .lower-ft-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-inline-start: 10%;
   margin-inline-end: 5%;
   margin-top: 2em;
@@ -486,10 +500,12 @@ footer{
   border-top: 1px solid grey;
   padding-top: 2em;
   padding-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .ultimate-ul{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .ultimate-ul li {
