@@ -449,6 +449,7 @@ footer{
   padding: 20px 12px 20px 12px;
   border-radius:64px ;
   min-width:50% ;
+  min-width: 8rem;
   line-height: 1px;
   background-color: black;
   color: white;
