@@ -395,16 +395,16 @@ nav .search {
   background-size: cover;
 }
 .flower {
-  background-image: url("./assets/big-card1.avif");
+  background-image: url("./assets/big-card01.avif");
 }
 .living {
-  background-image: url("./assets/big-card2.avif");
+  background-image: url("./assets/big-card02.avif");
 }
 .lunch {
-  background-image: url("./assets/big-card3.avif");
+  background-image: url("./assets/big-card03.avif");
 }
 .shoes {
-  background-image: url("./assets/big-card4.avif");
+  background-image: url("./assets/big-card04.avif");
 }
 
 .bigc-description {
