@@ -8,38 +8,43 @@
     <link rel="stylesheet" href="work-style.css" />
   </head>
   <body>
-    <div id="body-container">
+    <div class="body-container"></div>
     <div id="left-menu">
-      <div class="lm-logo">
-        <img src="assets/logo.svg" alt="logo ikea">
+        <div class="lm-logo">
+          <img src="assets/logo.svg" alt="logo ikea">
+        </div>
+        <div class="lm-logo-back">
+          <img src="assets/cross.svg" alt="cross">
+        </div>
+        <div class="titles">
+          <h2>Prodotti</h2>
+          <h2>Ambienti</h2>
+        </div>
+        <div class="lm-bold-list">
+          <ul>
+            <li>Idee e ispirazione</li>
+            <li>Prezzi bassi</li>
+            <li>I nostri servizi</li>
+            <li>Adesso in IKEA</li>
+          </ul>
+        </div>
+        <div class="lm-normal-list">
+          <ul>
+            <li>Servizio clienti</li>
+            <li>Dov'è il mio ordine?</li>
+            <li>I nostri punti vendita</li>
+            <li>Planner e configuratori</li>
+            <li>IKEA Family</li>
+            <li>IKEA Business Network</li>
+          </ul>
+        </div>
+        <div class="lm-footer-btn">
+          <button class="medium">
+            <img src="assets/world-site.svg" class="global-icon"alt="simbolo mondo">
+            Cambia paese
+          </button>
+        </div>
       </div>
-      <div class="lm-logo-back" onclick="closeMenu()">
-        <img src="assets/cross.svg" alt="cross">
-      </div>
-      <div class="titles">
-        <h2>Prodotti</h2>
-        <h2>Ambienti</h2>
-      </div>
-      <div class="lm-bold-list">
-        <ul>
-          <li>Idee e ispirazione</li>
-          <li>Prezzi bassi</li>
-          <li>I nostri servizi</li>
-          <li>Adesso in IKEA</li>
-        </ul>
-      </div>
-      <div class="lm-normal-list">
-        <ul>
-          <li>Servizio clienti</li>
-          <li>Dov'è il mio ordine?</li>
-          <li>I nostri punti vendita</li>
-          <li>Planner e configuratori</li>
-          <li>IKEA Family</li>
-          <li>IKEA Business Network</li>
-        </ul>
-      </div>
-      <div class="lm-footer-logo"></div>
-    </div>
     <div class="info">
       <img src="assets/van.svg" alt="truck" />
       <a href="#"
@@ -47,7 +52,7 @@
         Postale fino al 6 marzo 2022</a>
     </div>
     <header>
-      <div class="hamburger" onclick="openMenu()">
+      <div class="hamburger">
         <img src="assets/menu.svg" alt="menu" />
         <div id="upload">
           <img src="assets/upload.svg" alt="upload" />
@@ -288,7 +293,6 @@
         </ul>
       </div>
     </footer>
-  </div>
   <script src="work-with-us.js"></script>
   </body>
 </html>
