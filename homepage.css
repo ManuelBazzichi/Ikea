@@ -70,22 +70,24 @@ nav {
   align-items: center;
   margin-top: 24px;
   width: 100%;
-  flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
+  justify-content: space-between;
+  
 }
 
-.logo-input-container {
+/* .logo-input-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
   max-width: 60%;
-}
+  
+} */
 
 .logo {
-  min-width: fit-content;
-  width: 7%;
+  
+  width: 80px;
 }
 
 nav .search {
@@ -93,12 +95,14 @@ nav .search {
   gap: 1rem;
   height: 50px;
   background-color: #f5f5f5;
-  padding: 1rem;
+  
   border-radius: 20px;
   padding: 13px 16px;
   flex: 1 1 20%;
   justify-content: space-between;
-  max-width: 90%;
+  min-width: 300px;
+  max-width: fit-content;
+  margin-left: 1rem;
 }
 
 .search input {
@@ -130,16 +134,17 @@ nav .search {
 .shop {
   display: flex;
   align-items: center;
-  padding: 1rem;
-  gap: 2em;
-  flex-wrap: wrap-reverse;
+  margin-left: 1rem;
+  /* flex-wrap: wrap-reverse; */
   justify-content: center;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .main-shop {
   display: flex;
   gap: 8px;
-  min-width: fit-content;
+  width: 160px;
 }
 
 .main-shop img {
@@ -149,6 +154,7 @@ nav .search {
 
 .strong {
   font-size: 11px;
+  
 }
 
 .description {
@@ -162,8 +168,10 @@ nav .search {
 
 .shop-buttons {
   display: flex;
-  gap: 1.5rem;
+  gap:.3rem;
   justify-self: flex-end;
+  width: 200px;
+  
 }
 
 .shop-buttons img {
@@ -174,7 +182,7 @@ nav .search {
 .main-shop-container {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  
 }
 
 .hamburger {
@@ -189,7 +197,9 @@ nav .search {
 .hamburger img {
   width: var(--icon_nav-img);
 }
-
+.hamburger-2{
+  display: none;
+}
 .sub-header {
   display: flex;
   margin-top: 8px;
@@ -824,12 +834,12 @@ footer a:hover{
 .content-ft>a:hover {
   color:#111;
 }
-.content-ft, a {
+.content-ft > a {
   text-decoration: none;
   font-size: 0.875rem;
 }
 
-.content-ft, h4, p, a {
+.content-ft > h4, .content-ft > p, .content-ft > a {
   padding-bottom: 0.5em;
   font-size: var(--font-siz-s);
 }
@@ -926,6 +936,8 @@ ul.footer-ul {
 /* MEDIA LAPTOP */
 
 @media screen and (max-width: 560px) {
+  
+  
   .header,
   .main {
     margin-inline-start: 2%;
@@ -1077,6 +1089,9 @@ ul.footer-ul {
     margin-inline-end: 10%;
   }
 
+  nav{
+    
+  }
   .big-card {
     width: 460px;
     height: 800px;
