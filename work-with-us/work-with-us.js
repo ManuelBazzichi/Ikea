@@ -1,4 +1,4 @@
-// Menu da sinistra 
+// Menu da sinistra , cliccando hamburger
 
 const gettingMenu = document.querySelector('.hamburger');
 const leftMenu = document.getElementById('left-menu');
@@ -29,7 +29,7 @@ closingMenu.addEventListener("click", closeMenu);
 bodyContainer.addEventListener("click", closeMenu);
 bodyContainer.addEventListener("click", close);
 
-// SIDE PANEL
+// Menu da destra , cliccando profilo
 
 let userBtn = document.getElementById("user-btn");
 let closeSide = document.getElementById("close-side");
