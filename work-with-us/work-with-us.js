@@ -1,3 +1,5 @@
+// Menu da sinistra 
+
 const gettingMenu = document.querySelector('.hamburger');
 const leftMenu = document.getElementById('left-menu');
 const bodyContainer = document.querySelector('.body-container');
@@ -8,12 +10,16 @@ function openMenu () {
     bodyContainer.style.opacity = '.40';
     bodyContainer.style.display = 'block';
     leftMenu.style.left = `0`;
-    leftMenu.style.width= '25vw';
     leftMenu.style.visibility = 'visible';
+    leftMenu.style.width= '500px';
+    leftMenu.style.transition = '0.2s ease';
+    
 }
 
 function closeMenu () {
     leftMenu.style.left = `-${leftMenu.style.width}`;
+    leftMenu.style.width= '0';
+    leftMenu.style.transition = '0.2s ease';
     bodyContainer.style.opacity = '1';
     bodyContainer.style.display = 'none';
 }
@@ -21,3 +27,5 @@ function closeMenu () {
 gettingMenu.addEventListener("click", openMenu);
 closingMenu.addEventListener("click", closeMenu);
 bodyContainer.addEventListener("click", closeMenu);
+
+

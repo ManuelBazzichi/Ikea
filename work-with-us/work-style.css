@@ -377,7 +377,7 @@ nav .search {
 
 /* FOOTER */
 
-.footer-container {
+/* .footer-container {
   display: flex;
   margin-top: 5em;
   padding-top: 3em;
@@ -522,9 +522,209 @@ a {
   list-style: none;
   color: #dad4d4;
   padding-left: 16px;
+} */
+
+footer > div{
+  /* width: 95%; */
+ margin-inline-start: 10%;
+ margin-inline-end: 2%;
+
 }
 
-/* JS IMPLEMENTATIONS */
+/* style for footer */
+
+.text-content-h2 {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 5em;
+  padding-top: 3em;
+}
+
+footer{
+  background-color: rgb(240, 238, 238);
+}
+
+.ft-part-2, .ft-part-3, .ft-part-4, .ft-part-5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.ft-part-1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-font {
+  font-size: 0.875rem;
+}
+.content-ft{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-ft> a {
+  text-decoration: underline;
+  color: black;
+  font-size: 0.875rem
+}
+
+.content-ft, a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.875rem;
+}
+
+.content-ft, h4, p, a {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em ;
+}
+
+.footer-ul li {
+  list-style: none;
+  color:#dad4d4;
+  padding-top: 0.5em;
+}
+
+.content-ft .lp-link{
+  position: static;
+  background-color: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  width: fit-content;
+  padding: 12px;
+}
+
+.content-ft .lp-link:hover{
+  background-color: #494949;
+}
+
+/* .small {
+  height: 18px;
+  padding: 20px 12px 20px 12px;
+  border-radius:64px ;
+  width:50% ;
+  line-height: 1px;
+  background-color: black;
+  color: white;
+  margin-top: 1em;
+} */
+
+
+.ft-logos img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+.lower-ft-container {
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 10%;
+  margin-inline-end: 5%;
+  margin-top: 2em;
+}
+
+.small-transparent >img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.small-transparent {
+  display: flex;
+  align-items: center;
+  border-radius: 64px;
+  padding: 10px 20px;
+  border: lightgrey 1px solid;
+  width: fit-content;
+}
+
+.small-transparent:hover {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.ft-ending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline-start: 10%;
+  margin-inline-end: 5%;
+  margin-top: 2em;
+  border-top: 1px solid grey;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ultimate-ul{
+  display: flex;
+}
+
+.ultimate-ul li {
+  list-style: none;
+  color:#dad4d4;
+  padding-left: 16px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.footer-container img {
+  visibility: collapse;
+  width: 0;
+}
+
+@media screen and (max-width:800px) {
+  footer >* {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .ultimate-ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer-container > div {
+      border-bottom: solid 1px #dfdfdf;
+    }
+  
+    .footer-container label {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .footer-container img {
+      visibility: visible;
+      width: 1.5rem;
+    }
+    
+    .footer-ul{
+      visibility: collapse;
+      height: 0;
+    }
+  
+    input[type="checkbox"]:checked~ .footer-ul {
+      visibility: visible;
+      height: fit-content;
+    }
+  
+    input[type="checkbox"]:checked~* img{
+      transform: rotate(180deg);
+    }
+}
+/* JS IMPLEMENTATIONS  */
 
 #left-menu {
   display: flex;
@@ -538,8 +738,7 @@ a {
   visibility: collapse;
   background-color: white;
   padding-left: 150px;
-  padding-right: 150px; 
-  transition: 0.3s;
+  /* padding-right: 150px;   */
 }
 
 .lm-bold-list {
@@ -613,14 +812,23 @@ a {
 }
 
 .lm-footer-btn{
-  margin-top: 64px;
-  margin-right: 16px;
+  margin-top: 200px;
+}
+
+.lm-footer-btn> .medium{
+  margin-right: 40px;
+}
+
+.lm-footer-btn> .medium:hover{
+  border: 1px solid black;
 }
 
 .global-icon {
   width: var(--icon_nav-img);
   padding-right: 8px;
-}
+} 
+
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1080px) {
