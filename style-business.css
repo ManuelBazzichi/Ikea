@@ -808,8 +808,73 @@ li {
   background-color: #002952;
   padding: 3vw;
 }
-/* inizio-footer */
+/* inizio-Form */
+/* .form_wrapper{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  
+}
+.form_container{
+  margin: 2rem;
+}
+.title_container{
+  margin: 2rem;
+  width: 100%;
+}
+.input_field{
+  margin: 1rem;
+}
+.input_field input{
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgb(241, 239, 239);
+  border: none;
+  
+}
+#country{
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgb(241, 239, 239);
+  border: none;
+}
 
+.button-form{
+  width: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #0058ab;
+  font-size: clamp(1.2rem,1vw,1.5rem);
+  margin-bottom: 2rem;
+  border: none;
+}
+.img-form{
+  display: flex;
+  justify-self: flex-end;
+  width: 400px;
+}
+.img-form img{
+  width: 100%;
+}
+
+.user{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8vw;
+} */
+/* fine-Form */
+
+/* inizio-footer */
 /* style for footer */
 .text-content-h2 {
   margin-top: 1em;
