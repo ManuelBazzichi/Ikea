@@ -165,7 +165,7 @@ nav .search {
 
 .shop-buttons img {
   min-width: 20px;
-  width: var(--icon_nav-img);
+  /* width: var(--icon_nav-img); */
 }
 
 .main-shop-container {

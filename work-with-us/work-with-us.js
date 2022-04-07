@@ -27,7 +27,7 @@ function closeMenu () {
 gettingMenu.addEventListener("click", openMenu);
 closingMenu.addEventListener("click", closeMenu);
 bodyContainer.addEventListener("click", closeMenu);
-bodyContainer.addEventListener("click", close);
+// bodyContainer.addEventListener("click", close);
 
 // Menu da destra , cliccando profilo
 
