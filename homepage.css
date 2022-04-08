@@ -523,6 +523,7 @@ nav .search {
   overscroll-behavior-inline: contain;
   cursor: grab;
   margin-bottom: var(--mrg-b);
+  
 }
 .big-card {
   width: 370px;
@@ -530,6 +531,7 @@ nav .search {
   display: flex;
   flex-direction: column;
   margin-bottom: var(--mrg-b);
+  
 }
 .bigc-image {
   width: 100%;
@@ -553,9 +555,9 @@ nav .search {
 .bigc-description {
   width: 40%;
   padding: 2rem;
-  line-height: clamp(1.5rem, 2.5vw, 2.5rem);
+  line-height: clamp(1.5rem, 1.8vw, 2rem);
   position: relative;
-  font-size: var(--font-siz-s);
+  
 }
 .bigc-description h2:hover {
   text-decoration: underline;
@@ -1031,7 +1033,7 @@ footer > div{
   /* width: 95%; */
  margin-inline-start: 10%;
  margin-inline-end: 2%;
-
+overflow-y: hidden;
 }
 
 /* style for footer */
