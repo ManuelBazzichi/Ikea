@@ -6,10 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Con IKEA for Business risparmi e guadagni tempo - IKEA IT</title>
+    <link rel="icon" href="assets/favicon-ikea.ico">
     <link rel="stylesheet" href="style-business.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="body-container"></div>
+    <div id="left-menu">
+        <div class="lm-logo"><a href="../homepage.html">
+                <img src="assets/logo.svg" alt="logo ikea">
+            </a>
+        </div>
+        <div class="lm-logo-back">
+            <img src="assets/cross.svg" alt="cross">
+        </div>
+        <div class="titles">
+            <h2>Prodotti</h2>
+            <h2>Ambienti</h2>
+        </div>
+        <div class="lm-bold-list">
+            <ul>
+                <li>Idee e ispirazione</li>
+                <li>
+                    <a href="../offers.html">Prezzi bassi</a>
+                </li>
+                <li>I nostri servizi</li>
+                <li>Adesso in IKEA</li>
+            </ul>
+        </div>
+        <div class="lm-normal-list">
+            <ul>
+                <li>Servizio clienti</li>
+                <li>Dov'è il mio ordine?</li>
+                <li>I nostri punti vendita</li>
+                <li>Planner e configuratori</li>
+                <li>IKEA Family</li>
+                <li><a href="../index-business.html">IKEA Business Network</a></li>
+            </ul>
+        </div>
+        <div class="lm-footer-btn">
+            <button class="medium">
+                <img src="assets/world-site.svg" class="global-icon" alt="simbolo mondo">
+                Cambia paese
+            </button>
+        </div>
+    </div>
+    <div class="left-icon">
+        <div id="share" class="share">
+            <img src="assets/upload-black.svg" alt="">
+        </div>
+        <a href="#">
+            <div id="go-up" class="go-up">
+                <img src="assets/up-peak-black.svg" alt="">
+            </div>
+        </a>
+    </div>
     <!-- nav/header -->
     <div class="info">
         <img src="assets/van.svg" alt="truck">
@@ -49,7 +101,7 @@
                     </div>
                 </div>
                 <div class="shop-buttons">
-                    <img src="/assets/user.svg" alt="user">
+                    <button id="user-btn"><img src="/assets/user.svg" alt="user"></button>
                     <img src="/assets/heart.svg" alt="heart">
                     <img src="/assets/basket.svg" alt="basket-shop">
                     <img class="hamburger-2" src="assets/menu.svg" alt="menu">
@@ -60,6 +112,30 @@
             <a href="#">Prodotti</a>
             <a href="#">Ambienti</a>
         </div>
+        <!-- inizio side-user -->
+        <div id="user-side" class="sidepanel">
+            <button id="close-side" class="closebtn">&times;</button>
+            <div class="user-title-btn">
+                <p class="title-side" href="#">Hej</p>
+                <button class="inside-button">Accedi</button>
+            </div>
+            <hr>
+            <div class="user-title-btn">
+                <a href="#">Iscriviti a IKEA Family</a>
+                <button class="inside-button-circle"><strong>></strong></button>
+            </div>
+            <hr>
+            <div class="user-title-btn">
+                <a href="#">Iscriviti a IKEA Business Network</a>
+                <button class="inside-button-circle"><strong>></strong></button>
+            </div>
+            <div class="bottom-title">
+                <a href="#">Traccia il tuo ordine</a>
+                <a href="#">Crea liste della spesa</a>
+                <a href="#">Progetta online</a>
+            </div>
+        </div>
+        <!-- fine side-user -->
 
     </header>
     <!-- nav-header -->
@@ -259,7 +335,7 @@
                 <img class="item-img-sct8 img-box-big" src="assets/section-8.avif" alt="img-1">
                 <div class="item-text sct8-text white">
                     <h2>Enti pubblici e Pubblica Amministrazione</h2>
-                    <p>IKEA è abilitata agli acquisti sulla piattaforna Nazionale MEPA e SINTEL per la Regiona
+                    <p>IKEA è abilitata agli acquisti sulla piattaforma Nazionale MEPA e SINTEL per la Regione
                         Lombardia.</p>
                     <button class="button-long"><a href="#"><strong>Scopri i dettagli</strong></a></button>
                 </div>
@@ -291,7 +367,78 @@
                     <button class="button-long"><strong>Alimenti più sostenibili</strong></button>
                 </div>
             </div>
+        </div>
+        
     </main>
+
+    <!-- inizio-Form -->
+    <!-- <div class="form_wrapper">
+        <div class="title_container">
+            <h2>Registrati per ricevere informazioni sulle nostre offerte</h2>
+        </div>
+        <div class="flex-form">
+            <div class="form_container">
+                <div class="row clearfix">
+                    <form>
+                        <div class="row clearfix user">
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="name" placeholder="Nome" />
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" name="surname" placeholder="Cognome" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="input_field "> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                <input type="password" name="password" placeholder="Password" required />
+                                <div id="errore"></div>
+                            </div>
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                <input type="password" name="password" placeholder="Reinserisci password" id="confirm"
+                                    required />
+                                <div id="equal-pass"></div>
+                            </div>
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="email" id="mail" name="email" placeholder="Email" required />
+                            <p id="error"></p>
+                        </div>
+                        <div class="input_field radio_option">
+                            <input type="radio" name="radiogroup1" id="rd1">
+                            <label for="rd1">Maschio</label>
+                            <input type="radio" name="radiogroup1" id="rd2">
+                            <label for="rd2">Femmina</label>
+                        </div>
+                        <div class="input_field select_option">
+                            <select id="country">
+                                <option>Nazionalità</option>
+                                <option>Italia</option>
+                                <option>Svezia</option>
+                            </select>
+                            <div class="select_arrow"></div>
+                        </div>
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1">Aderisco ai termini e condizioni</label>
+                        </div>
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb2">
+                            <label for="cb2">Voglio ricevere informazioni tramite mail</label>
+                        </div>
+                        <input type="submit" class="button-form" id="button" value="Register" />
+                    </form>
+                </div>
+            </div>
+            <div class="img-form">
+                <img class="img-form" src="./assets/undraw_mail_re_duel.svg" alt="">
+            </div>
+        </div>
+    </div> -->
+    <!-- fine-Form -->
 
     <footer>
         <div class="footer-container">
@@ -301,18 +448,21 @@
                     <p class="footer-font">Entra nel club per dar vita alla tue idee, avrai accesso a tanti vantaggi,
                         promozioni ed eventi dedicati</p>
                     <a href="">Scopri di più</a>
-                    <button class="small">Iscriviti o accedi</button>
+                    <a class="lp-link">Iscriviti o accedi</a>
                 </div>
                 <div class="content-ft">
                     <h4 class="text-content-h2">Entra in IKEA Business Network</h4>
                     <p class="footer-font">Siamo con te in ogni tua impresa: dalla fattura in cassa alla consulenza
                         d'arredo e tanti altri vantaggi.</p>
                     <a href="">Scopri di più</a>
-                    <button class="small">Iscriviti o accedi</button>
+                    <a class="lp-link">Iscriviti o accedi</a>
                 </div>
             </div>
             <div class="ft-part-2">
-                <h4 class="text-content-h2">Aiuto e contatti</h4>
+                <input type="checkbox" id="expand-toggle1">
+                <label for="expand-toggle1">
+                    <h4 class="text-content-h2">Aiuto e contatti</h4><img src="assets/down-peak.svg" alt="">
+                </label>
                 <ul class="footer-ul">
                     <li><a href="">Servizio Clienti</a></li>
                     <li><a href="">Servizi di consegna</a></li>
@@ -329,7 +479,10 @@
                 </ul>
             </div>
             <div class="ft-part-3">
-                <h4 class="text-content-h2">Acquistare in Ikea</h4>
+                <input type="checkbox" id="expand-toggle2">
+                <label for="expand-toggle2">
+                    <h4 class="text-content-h2">Acquistare in Ikea</h4><img src="assets/down-peak.svg" alt="">
+                </label>
                 <ul class="footer-ul">
                     <li><a href="">Planner e configuratori</a></li>
                     <li><a href="">Consulenza d'arredo</a></li>
@@ -342,7 +495,10 @@
                 </ul>
             </div>
             <div class="ft-part-4">
-                <h4 class="text-content-h2">Il mio account</h4>
+                <input type="checkbox" id="expand-toggle3">
+                <label for="expand-toggle3">
+                    <h4 class="text-content-h2">Il mio account</h4><img src="assets/down-peak.svg" alt="">
+                </label>
                 <ul class="footer-ul">
                     <li><a href="">Profilo/Login</a></li>
                     <li><a href="">Il mio profilo IKEA Family</a></li>
@@ -350,7 +506,10 @@
                 </ul>
             </div>
             <div class="ft-part-5">
-                <h4 class="text-content-h2">A proposito di Ikea</h4>
+                <input type="checkbox" id="expand-toggle4">
+                <label for="expand-toggle4">
+                    <h4 class="text-content-h2">A proposito di Ikea</h4><img src="assets/down-peak.svg" alt="">
+                </label>
                 <ul class="footer-ul">
                     <li><a href="">Lavora con noi</a></li>
                     <li><a href="">Questa è IKEA</a></li>
@@ -390,9 +549,20 @@
                 <li><a href="">Responsible disclosure</a></li>
                 <li><a href="">Modello 231</a></li>
             </ul>
+            <div class="left-icon">
+                <div id="share" class="share">
+                    <img src="assets/upload-black.svg" alt="">
+                </div>
+                <a href="#">
+                    <div id="go-up" class="go-up">
+                        <img src="assets/up-peak-black.svg" alt="">
+                    </div>
+                </a>
+            </div>
         </div>
     </footer>
-
+    <script src="user-btn.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
