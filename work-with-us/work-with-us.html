@@ -216,6 +216,73 @@
         </h4>
         <button class="medium">Cerca le opportunità di lavoro</button>
       </div>
+
+<section>
+
+  <div class="form_wrapper">
+    <div class="title_container">
+        <h2>Registrati per ricevere informazioni sulle nostre offerte</h2>
+      </div>
+    <div class="form_container">
+      <div class="row clearfix">
+          <form >
+            <div class="row clearfix user">
+              <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                  <input type="text" name="name" placeholder="Nome" />
+                </div>
+              </div>
+              <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                  <input type="text" name="surname" placeholder="Cognome" required />
+                </div>
+              </div>
+            </div>
+            <div class="user">
+            <div class="input_field "> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password" name="password" placeholder="Password" required />
+            <div id="errore"></div>
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input type="password" name="password" placeholder="Reinserisci password" id="confirm" required />                  
+              <div id="equal-pass"></div>
+            </div>
+          </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="email" id="mail" name="email" placeholder="Email"  required />
+              <p id="error"></p>
+            </div>
+                 <div class="input_field radio_option">
+                <input type="radio" name="radiogroup1" id="rd1">
+                <label for="rd1">Maschio</label>
+                <input type="radio" name="radiogroup1" id="rd2">
+                <label for="rd2">Femmina</label>
+                </div>
+                <div class="input_field select_option">
+                  <select id="country">
+                    <option>Nazionalità </option>
+                    <option>Italia</option>
+                    <option>Svezia</option>
+                  </select>
+                  <div class="select_arrow"></div>
+                </div>
+              <div class="input_field checkbox_option">
+                 <input type="checkbox" id="cb1">
+               <label for="cb1">Aderisco ai termini e condizioni</label>
+              </div>
+              <div class="input_field checkbox_option">
+                 <input type="checkbox" id="cb2">
+               <label for="cb2">Voglio ricevere informazioni tramite mail</label>
+              </div>
+            <input type="submit" class="button-form" id="button" value="Register" />
+          </form>
+      </div>
+    </div>
+    <div class="img-form">
+      <img class="img-form" src="./assets/undraw_mail_re_duel.svg" alt="">
+    </div>
+  </div>
+</section>
     </main>
     <!-- <footer>
       <div class="footer-container">
