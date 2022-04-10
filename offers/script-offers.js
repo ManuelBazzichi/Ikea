@@ -44,9 +44,7 @@ function closeCta() {
 
 shareBtn.addEventListener("click", openCta);
 closeSidebarCta.addEventListener("click", closeCta);
-bodyContainer.addEventListener("click", close);
 bodyContainer.addEventListener("click", closeCta);
-bodyContainer.addEventListener("click", closeNav);
 
 //icone cta sulla sinistra compaiono e cambiano colore allo sroll
 
