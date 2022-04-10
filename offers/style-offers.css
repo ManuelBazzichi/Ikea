@@ -27,7 +27,7 @@ body, p, h1, h2, h3, h4, span, div, a{
   top: 0;
   overflow-y: scroll;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .avatar {
@@ -84,6 +84,70 @@ body, p, h1, h2, h3, h4, span, div, a{
   width: var(--icon_nav-img);
 }
 
+
+/* style for sidebar al click del cta "condividi" */
+
+.cta-sidebar {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.3s;
+  padding-top: 60px;
+  border-radius: 20px;
+  padding: 0;
+}
+
+
+
+.cta-sidebar-up {
+  height: 120px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+.cta-sidebar img, .cta-sidebar i {
+  width: var(--icon_nav-img);
+}
+
+.icon-link {
+  transform: rotate(-45deg);
+}
+
+.cta-sidebar-mid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  line-height: 1.571;
+  padding: 40px 0;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.cta-sidebar-mid img {
+  width: 86px;
+}
+
+.cta-sidebar-bottom div {
+  height: 90px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.cta-sidebar-bottom div a:hover {
+  text-decoration: underline;
+}
+
 /* style for right navbar */
 
 #user-btn {
@@ -106,7 +170,7 @@ body, p, h1, h2, h3, h4, span, div, a{
   top: 0;
   right: 0;
   background-color: #0058a3;;
-  overflow-y: hidden;
+  overflow-y: scroll;
   transition: 0.3s;
   padding-top: 60px;
 }
@@ -907,7 +971,7 @@ footer input[type="checkbox"] {
 
 /* style for share and go up icons */
 
-.left-icon {
+.left-icon, .left-icon-black {
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -915,13 +979,25 @@ footer input[type="checkbox"] {
   position: fixed;
   bottom: 50px;
   left: 30px;
+  display: none;
 }
 
-.left-icon img{
+/* .left-icon-black {
+  display: none;
+} */
+
+.left-icon #go-up {
+  display: none;
+}
+
+.left-icon a, .left-icon-black a{
   width: var(--icon_nav-img);
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
-.left-icon div {
+.white, .black {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -934,18 +1010,24 @@ footer input[type="checkbox"] {
 
 }
 
-.share:hover::after {
+.black {
+  background-color: #000000;
+}
+
+#share:hover::after {
   content: "Condividi";
+}
+
+#go-up:hover::after {
+  content: "Torna all'inizio";
+}
+
+.white:hover::after {
   color: black;
 }
 
-/* .go-up {
-  visibility: collapse;
-} */
-
-.go-up:hover::after {
-  content: "Torna all'inizio";
-  color: black;
+.black:hover::after {
+  color: white;
 }
 
 /* style for form */
@@ -1155,7 +1237,7 @@ footer input[type="checkbox"] {
       flex-wrap: wrap-reverse;
     }
 
-    .left-icon {
+    .left-icon, .left-icon-black {
       display: none;
     }
 }

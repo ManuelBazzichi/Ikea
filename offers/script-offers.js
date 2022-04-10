@@ -1,7 +1,9 @@
 const bodyContainer = document.querySelector('.body-container');
+const footer = document.getElementById("footer");
 let userBtn = document.getElementById("user-btn");
 let closeSide = document.getElementById("close-side");
-const userSide = document.getElementById("user-side");
+let shareBtn = document.getElementById("share");
+let closeSidebarCta = document.getElementById("close-cta-sidebar");
 
 
 /* Open when someone clicks on the hamburger */
@@ -24,20 +26,57 @@ function closeNav() {
     bodyContainer.style.opacity = '1';
     bodyContainer.style.display = 'none';
 }
-// intercetto lo scroll di pagina
-//window.addEventListener('scroll', function()
-//{
-// se lo scroll supera i 300 pixel dal margine superiore mostro il bottone (se nascosto)
-//    if (("body").scrollTop() < 500) {
-//       document.getElementById("go-up").style.visibility = "visible";        
-//    }
-// })
+//menu destra cliccando condividi
+
+function openCta() {
+    document.getElementById("cta-sidebar").style.width = "460px";
+    document.getElementById("cta-sidebar").style.padding = "0 3rem 2rem 3rem";
+    bodyContainer.style.opacity = '.40';
+    bodyContainer.style.display = 'block';
+}
+
+function closeCta() {
+    document.getElementById("cta-sidebar").style.width = "0";
+    document.getElementById("cta-sidebar").style.padding = "0";
+    bodyContainer.style.opacity = '1';
+    bodyContainer.style.display = 'none';
+}
+
+shareBtn.addEventListener("click", openCta);
+closeSidebarCta.addEventListener("click", closeCta);
+bodyContainer.addEventListener("click", close);
+bodyContainer.addEventListener("click", closeCta);
+bodyContainer.addEventListener("click", closeNav);
+
+//icone cta sulla sinistra compaiono e cambiano colore allo sroll
+
+window.onscroll = function () { CTA() };
+let startingHeight = document.documentElement.scrollHeight - footer.clientHeight - window.innerHeight;
+
+function CTA() {
+    if (document.documentElement.scrollTop <= document.documentElement.scrollHeight / 3) {
+        document.getElementById("white").style.display = "flex";
+        document.getElementById("white").style.height = "fit-content";
+        document.getElementById("go-up").style.display = "none";
+        document.getElementById("black").style.display = "none";
+    } else if (document.documentElement.scrollTop > document.documentElement.scrollHeight / 3 && document.documentElement.scrollTop < startingHeight) {
+        document.getElementById("white").style.height = "100px";
+        document.getElementById("white").style.display = "flex";
+        document.getElementById("go-up").style.display = "flex";
+        document.getElementById("black").style.display = "none";
+    } else if (document.documentElement.scrollTop >= startingHeight){
+        document.getElementById("white").style.display = "none";
+        document.getElementById("black").style.display = "flex";
+        document.getElementById("go-up").style.display = "flex";
+    }
+}
+
 
 
 // Menu da destra , cliccando profilo
 
 function open() {
-    userSide.style.width = "400px";
+    document.getElementById("user-side").style.width = "400px";
     bodyContainer.style.opacity = '.40';
     bodyContainer.style.display = 'block';
 }
