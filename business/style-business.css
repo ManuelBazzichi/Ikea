@@ -809,7 +809,7 @@ li {
   padding: 3vw;
 }
 /* inizio-Form */
-/* .form_wrapper{
+.form_wrapper{
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -859,7 +859,9 @@ li {
   width: 400px;
 }
 .img-form img{
-  width: 100%;
+  width: 23em;
+  margin-left: 3em;
+  margin-bottom: 5em;
 }
 
 .user{
@@ -871,7 +873,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 8vw;
-} */
+  overflow-x: hidden;
+}
 /* fine-Form */
 
 /* inizio-footer */
