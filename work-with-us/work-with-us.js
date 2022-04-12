@@ -17,7 +17,7 @@ function openMenu () {
 }
 
 function closeMenu () {
-    leftMenu.style.left = `-${leftMenu.style.width}`;
+    leftMenu.style.left = `-500px`;
     leftMenu.style.width= '0';
     leftMenu.style.transition = '0.2s ease';
     bodyContainer.style.opacity = '1';
@@ -27,7 +27,7 @@ function closeMenu () {
 gettingMenu.addEventListener("click", openMenu);
 closingMenu.addEventListener("click", closeMenu);
 bodyContainer.addEventListener("click", closeMenu);
-// bodyContainer.addEventListener("click", close);
+bodyContainer.addEventListener("click", close);
 
 // Menu da destra , cliccando profilo
 
