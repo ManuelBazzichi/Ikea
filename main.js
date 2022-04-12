@@ -9,7 +9,6 @@ next.addEventListener("click", () => {
   });
 });
 
-
 previous.addEventListener("click", () => {
   selectButtons.scrollBy({
     left: -140,
@@ -83,30 +82,35 @@ btn.addEventListener("click", (e) => {
   localStorage.setItem("users", JSON.stringify(data));
 });
 
-let answer = document.getElementById("excuse");
+let answer = document.getElementById("error");
 
 let local = localStorage.getItem("users");
 
 let obj = JSON.parse(local);
-if (obj[0].mail === "dens90@hotmail.it") {
+console.log(obj);
+
+if (obj[0].mail) {
   answer.innerHTML = "sei gia registrato";
 }
 
 let mail = document.getElementById("mail").value;
 let idMail = document.getElementById("mail");
 
-
-
-const errorDOM = document.getElementById('error');
+const errorDOM = document.getElementById("error");
 const validateEmail = (mail) => {
   const email_regex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return mail === "" ? "empty" : email_regex.test(String(mail).toLowerCase());
 };
 
-idMail.addEventListener('blur',(e) => {
-e.preventDefault();
-let valueMail = document.getElementById('mail').value;
-let result = validateEmail(valueMail);
-  errorDOM.innerText = result === "empty" ? "Enter an email address" : result ? 'Email valid' : 'Email invalid';
-})
+idMail.addEventListener("blur", (e) => {
+  e.preventDefault();
+  let valueMail = document.getElementById("mail").value;
+  let result = validateEmail(valueMail);
+  errorDOM.innerText =
+    result === "empty"
+      ? "Enter an email address"
+      : result
+      ? "Email valid"
+      : "Email invalid";
+});
