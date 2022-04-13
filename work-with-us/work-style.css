@@ -863,6 +863,22 @@ input[type="checkbox"] {
   /* padding-right: 150px;   */
 }
 
+.left-menu-implementation{
+  left: 0;
+  visibility: visible;
+  width: 500px;
+  transition: 0.2s ease;
+}
+
+
+.left-menu-closing{
+  left: -500px;
+  width: 0;
+  transition: 0.2s ease;
+  visibility: collapse;
+}
+
+
 .lm-bold-list {
   font-weight: bold;
 }

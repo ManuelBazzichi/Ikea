@@ -9,17 +9,19 @@ const closingMenu = document.querySelector('.lm-logo-back');
 function openMenu () {   
     bodyContainer.style.opacity = '.40';
     bodyContainer.style.display = 'block';
-    leftMenu.style.left = `0`;
-    leftMenu.style.visibility = 'visible';
-    leftMenu.style.width= '500px';
-    leftMenu.style.transition = '0.2s ease';
+    // leftMenu.style.left = `0`;
+    // leftMenu.style.visibility = 'visible';
+    // leftMenu.style.width= '500px';
+    // leftMenu.style.transition = '0.2s ease';
+    leftMenu.classList.add('left-menu-implementation');
     
 }
 
 function closeMenu () {
-    leftMenu.style.left = `-500px`;
-    leftMenu.style.width= '0';
-    leftMenu.style.transition = '0.2s ease';
+    // leftMenu.style.left = `-500px`;
+    // leftMenu.style.width= '0';
+    // leftMenu.style.transition = '0.2s ease';
+    leftMenu.classList.add('left-menu-closing');
     bodyContainer.style.opacity = '1';
     bodyContainer.style.display = 'none';
 }
