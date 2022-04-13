@@ -1,7 +1,7 @@
 // Menu da sinistra , cliccando hamburger
 
 const gettingMenu = document.querySelector('.hamburger');
-const leftMenu = document.getElementById('left-menu');
+const leftMenu = document.querySelector('.left-menu');
 const bodyContainer = document.querySelector('.body-container');
 const closingMenu = document.querySelector('.lm-logo-back');
 
@@ -9,18 +9,12 @@ const closingMenu = document.querySelector('.lm-logo-back');
 function openMenu () {   
     bodyContainer.style.opacity = '.40';
     bodyContainer.style.display = 'block';
-    // leftMenu.style.left = `0`;
-    // leftMenu.style.visibility = 'visible';
-    // leftMenu.style.width= '500px';
-    // leftMenu.style.transition = '0.2s ease';
+    leftMenu.classList.remove('left-menu-closing')
     leftMenu.classList.add('left-menu-implementation');
     
 }
 
 function closeMenu () {
-    // leftMenu.style.left = `-500px`;
-    // leftMenu.style.width= '0';
-    // leftMenu.style.transition = '0.2s ease';
     leftMenu.classList.add('left-menu-closing');
     bodyContainer.style.opacity = '1';
     bodyContainer.style.display = 'none';

@@ -848,7 +848,7 @@ input[type="checkbox"] {
 }
 /* JS IMPLEMENTATIONS  */
 
-#left-menu {
+.left-menu {
   display: flex;
   flex-direction: column;
   z-index: 1000;
