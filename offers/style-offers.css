@@ -1081,7 +1081,10 @@ footer input[type="checkbox"] {
   display: flex;
   justify-self: flex-end;
   width: 400px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
+
 .img-form img{
   width: 100%;
 }
@@ -1135,11 +1138,6 @@ footer input[type="checkbox"] {
 
   .cta-sidebar {
     margin-right: -30px;
-  }
-
-  .img-form {
-    padding-left: 16px;
-    padding-bottom: 32px;
   }
 
 }
