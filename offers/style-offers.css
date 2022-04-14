@@ -114,6 +114,11 @@ body, p, h1, h2, h3, h4, span, div, a{
   align-items: center;
 }
 
+/* .white-zero-oneThird{
+  display: flex;
+  height: fit-content;
+} */
+
 
 .cta-sidebar img, .cta-sidebar i {
   width: var(--icon_nav-img);
