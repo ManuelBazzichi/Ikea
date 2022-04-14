@@ -144,3 +144,4 @@ let valueMail = document.getElementById('mail').value;
 let result = validateEmail(valueMail);
   errorDOM.innerText = result === "empty" ? "Enter an email address" : result ? 'Email valid' : 'Email invalid';
 })
+
