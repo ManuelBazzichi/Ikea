@@ -642,6 +642,8 @@ form */
   display: flex;
   justify-self: flex-end;
   width: 400px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 .img-form img {
   width: 100%;
