@@ -1137,6 +1137,11 @@ footer input[type="checkbox"] {
     margin-right: -30px;
   }
 
+  .img-form {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width:380px) {
@@ -1155,6 +1160,14 @@ footer input[type="checkbox"] {
 }
 
 @media screen and (max-width:800px) {
+  header,
+  main, footer > div{
+    /* width: 95%; */
+   margin-inline-start: 5%;
+   margin-inline-end: 5%;
+  
+  }
+
     .cards-cnt{
       overflow-x: scroll;
     }
