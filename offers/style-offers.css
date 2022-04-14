@@ -1121,7 +1121,11 @@ footer input[type="checkbox"] {
   }
 
   
-  nav {
+  /* nav {
+    flex-wrap: wrap;
+  } */
+
+  .main-shop-container {
     flex-wrap: wrap;
   }
 
@@ -1157,6 +1161,10 @@ footer input[type="checkbox"] {
 
     .product-section {
       overflow-x: scroll;
+    }
+
+    nav {
+      flex-wrap: wrap;
     }
 
     .shop {
